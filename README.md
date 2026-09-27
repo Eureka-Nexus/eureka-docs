@@ -1,2 +1,9 @@
-# eureka-docs
-Official documentation  tokenomics and technical specifications for Eureka Nexus (EKNX)
+# Eureka Nexus Documentation
+
+Official public documentation for Eureka Nexus / EKNX.
+
+- `PROJECT_SPEC.md`
+- `TOKENOMICS.md`
+- `MINING_ARCHITECTURE.md`
+- `SECURITY.md`
+- `ROADMAP.md`
