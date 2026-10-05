@@ -8,4 +8,4 @@
 6. Perform the separately approved Genesis Market launch when product readiness and the launch decision permit it.
 7. Monitor shares, daily settlements, claims and market state after launch.
 
-The former Solana mint and payout roadmap is retired. Mining activation on BNB Smart Chain is complete. Genesis Market launch remains a separate state and must not be described as complete unless confirmed on-chain.
+Mining activation on BNB Smart Chain is complete. Genesis Market launch remains a separate state and must not be described as complete unless confirmed on-chain.

@@ -11,5 +11,5 @@ Canonical public documentation for Eureka Nexus (EKNX) on **BNB Smart Chain Main
 - [Contract source snapshot and public ABIs](contracts/README.md)
 - [Official miner downloads](https://github.com/Eureka-Nexus/eureka-miner/releases)
 
-The earlier Solana proposal is superseded. Historical Git commits are not the current network specification.
+Historical Git commits are not the current network specification.
 Mining activation and Genesis Market launch are separate one-time on-chain actions. The public mining network is active on BNB Smart Chain; Genesis Market launch status must be checked independently on-chain.
