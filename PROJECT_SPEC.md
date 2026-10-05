@@ -1,22 +1,21 @@
-# Eureka Nexus — Project Specification v0.5
+# Eureka Nexus — BSC specification
 
-**Project:** Eureka Nexus  
-**Token:** EKNX  
-**Network:** Solana  
-**Domain:** `eurekanexus.pt`
+| Item | Canonical value |
+| --- | --- |
+| Network | BNB Smart Chain Mainnet |
+| Chain ID | 56 |
+| Token | Eureka Nexus (EKNX), 18 decimals |
+| Token contract | `0xF54913A8d5E2AEBD0B62c6411cCf1b5B4aB069c9` |
+| Genesis Market | `0x837dBE1D3b67e8315127c36a119E163e713ee73D` |
+| Pool API | `https://pool.eurekanexus.pt` |
+| GPU Stratum | `pool.eurekanexus.pt:3333` |
+| CPU work | RANDOMX-EUREKA-V1 |
+| GPU work | KAWPOW-EUREKA-V1 |
 
-## Maximum supply
-**100,000,000 EKNX**
+Maximum supply is 100,000,000 EKNX. Genesis creates 1,000,000 EKNX directly in the Genesis Market; up to 99,000,000 EKNX can be minted through verified mining claims. Founder, team and deployer receive no genesis token allocation.
 
-## Allocation
-- Founder: 20,000,000 (20%)
-- Mining Reserve: 50,000,000 (50%)
-- Market / Liquidity: 15,000,000 (15%)
-- Development: 10,000,000 (10%)
-- Community: 5,000,000 (5%)
+The deployment transaction is `0x56945abef37dddbef98697853ccd3d020906cccef4969e3b16a7bd47cb4d93b8`.
 
-## Year-1 mining ceiling
-**800,000 EKNX** — CPU 480,000 / GPU 320,000. Public target round duration: 10 minutes.
+Mining is activated on BNB Smart Chain. The production mining server verifies the on-chain mining start timestamp as `1790996796`. Genesis Market launch is a separate contract state and must be checked independently on-chain before making market-status claims.
 
-## Current status
-Mining protocol and software are under active development. The real EKNX Solana Mainnet mint has not yet been created. Public materials must not claim otherwise.
+The server coordinates application-level proof of work; miners do not validate BNB Smart Chain consensus. See [tokenomics](TOKENOMICS.md) and [launch requirements](LAUNCH_CHECKLIST.md).

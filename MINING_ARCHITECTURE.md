@@ -1,9 +1,22 @@
-# Mining Architecture
+# Mining architecture
 
 ```text
-Eureka Miner → shares → Eureka Mining Server → reward ledger → Solana payout service → miner wallet
+Miner CPU (RandomX) / GPU (external KAWPOW engine)
+  -> official HTTP pool / KAWPOW Stratum bridge
+  -> local proof-of-work verifiers
+  -> difficulty-weighted epoch accounting
+  -> daily cumulative Merkle settlement
+  -> two-of-three operator signatures
+  -> BSC settlement publication
+  -> official relayer submits eligible claimMining transactions and pays BSC gas
 ```
 
-The miner sends a **public Solana address only**. Private keys never belong on the mining server.
+Only server-validated work creates accounting rewards. Reported hashrate is not proof of work. The server stores public BSC wallet addresses and must not hold miner seed phrases or operator signing keys.
 
-The current SHA-256 protocol engine validates the end-to-end pipeline. It must not be represented as the final anti-ASIC CPU algorithm. Final CPU and GPU PoW algorithms must be frozen, benchmarked and reviewed before public mining launch.
+Production uses the token's `miningStart()` as its authoritative clock. Keep configuration `mining_start_unix` at zero; a positive local timestamp is a legacy test override and must not be used in production. A pool can report its acceptance/emission flags as true while still waiting for on-chain activation.
+
+The server persists accounts and epoch state under `data/`, and settlements under `data/settlements/`. These are financial records, not disposable build artifacts. A restore must preserve a consistent snapshot. Version 1.0.1 rejects malformed reward state rather than silently creating an empty ledger.
+
+KAWPOW and RandomX verifiers must listen on loopback only. Expose the HTTP API through HTTPS and the intended Stratum listener through its controlled ingress. Keep administrative access and operator signing separate.
+
+The official Eureka Nexus Miner 1.1.2 dashboard is `http://127.0.0.1:8077`. The dashboard is a local service and must not be exposed publicly.

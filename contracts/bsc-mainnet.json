@@ -1,0 +1,16 @@
+{
+  "network": "BNB Smart Chain Mainnet",
+  "chainId": 56,
+  "deploymentTx": "0x56945abef37dddbef98697853ccd3d020906cccef4969e3b16a7bd47cb4d93b8",
+  "EKNX": "0xF54913A8d5E2AEBD0B62c6411cCf1b5B4aB069c9",
+  "GenesisMarket": "0x837dBE1D3b67e8315127c36a119E163e713ee73D",
+  "deployerLauncher": "0x42F58c8a09Bce3A00Faf553AAC60B0daF320858b",
+  "pancakeRouter": "0x10ED43C718714eb63d5aA57B78B54704E256024E",
+  "operationsWallet": "0x839943749d7Aacb823b36F9327eA2AE883809805",
+  "founderRevenueWallet": "0x42F58c8a09Bce3A00Faf553AAC60B0daF320858b",
+  "miningOperators": [
+    "0x25c7782Ff45F75627a33B940a637dbdB7Fe57C4c",
+    "0x592F49089dD03deCBA871AdBcBB813Db4E472495",
+    "0x8F5d24133C2c5DC00A2940105235C4BC02109Ad3"
+  ]
+}
