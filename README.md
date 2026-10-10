@@ -12,4 +12,4 @@ Canonical public documentation for Eureka Nexus (EKNX) on **BNB Smart Chain Main
 - [Official miner downloads](https://github.com/Eureka-Nexus/eureka-miner/releases)
 
 Historical Git commits are not the current network specification.
-Mining activation and Genesis Market launch are separate one-time on-chain actions. The public mining network is active on BNB Smart Chain; Genesis Market launch status must be checked independently on-chain.
+The public mining network and the Genesis Market are active on BNB Smart Chain. Current market, graduation and transfer status must continue to be verified on-chain. The future DEX stage is not active before graduation.

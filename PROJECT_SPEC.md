@@ -16,6 +16,6 @@ Maximum supply is 100,000,000 EKNX. Genesis creates 1,000,000 EKNX directly in t
 
 The deployment transaction is `0x56945abef37dddbef98697853ccd3d020906cccef4969e3b16a7bd47cb4d93b8`.
 
-Mining is activated on BNB Smart Chain. The production mining server verifies the on-chain mining start timestamp as `1790996796`. Genesis Market launch is a separate contract state and must be checked independently on-chain before making market-status claims.
+Mining and the Genesis Market are active on BNB Smart Chain. The production mining server verifies the on-chain mining start timestamp as `1790996796`. The Genesis Market must continue to be checked on-chain for live state, graduation and transfer-status claims; the future DEX stage is not active before graduation.
 
 The server coordinates application-level proof of work; miners do not validate BNB Smart Chain consensus. See [tokenomics](TOKENOMICS.md) and [launch requirements](LAUNCH_CHECKLIST.md).

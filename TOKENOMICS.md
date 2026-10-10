@@ -13,10 +13,10 @@ Each accounting epoch lasts 60 seconds. Era-0 gross caps are 5 EKNX per GPU epoc
 
 The official pool fee is 1% of earned rewards: 99% to miners, 1% to `0x42f58c8a09bce3a00faf553aac60b0daf320858b`, with integer rounding handled by the server. Epoch rewards accumulate into daily cumulative Merkle settlements. Each on-chain daily settlement requires signatures from two of three contract operators.
 
-The official client/pool uses a 50 EKNX minimum claim policy. This is not a 50 EKNX restriction enforced by the token contract. Claims require an available published settlement and a valid Merkle proof. The official Eureka Nexus Relayer submits eligible claims and pays the BSC gas, so the mining wallet does not need BNB for the official claim flow.
+The official automatic payout policy uses a 5 EKNX minimum published unpaid entitlement threshold. This is an operational pool policy, not a 5 EKNX restriction enforced by the token contract. Settlements are cumulative and published daily; automatic payout eligibility is checked every 4 hours at 00:30, 04:30, 08:30, 12:30, 16:30 and 20:30 UTC. The official relayer submits eligible `claimMining` transactions and pays the BSC gas, so the mining wallet does not need BNB for the official automatic payout flow.
 
 ## Genesis Market
 
-The separate market launch enables the bonding curve. Of its 1,000,000 EKNX allocation, 650,000 EKNX are assigned to the curve sale and 350,000 EKNX to liquidity. Graduation targets 25 BNB: 21 BNB for liquidity, 3 BNB for operations and 1 BNB for founder revenue. These BNB allocations are separate from genesis token allocations.
+The Genesis Market is LIVE on-chain. Of its 1,000,000 EKNX allocation, 650,000 EKNX are assigned to the live bonding curve and 350,000 EKNX are reserved for liquidity at graduation. Graduation targets 25 BNB: 21 BNB for liquidity, 3 BNB for operations and 1 BNB for founder revenue. These BNB allocations are separate from genesis token allocations.
 
-Mining activation does not launch the market. Transfer availability follows the token and market contract rules. No token price, return or earnings are guaranteed.
+Mining and the Genesis Market are both active. Transfer availability follows the deployed token and market contract rules. The future DEX stage remains inactive until graduation. No token price, return or earnings are guaranteed.
